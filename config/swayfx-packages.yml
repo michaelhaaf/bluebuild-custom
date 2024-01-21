@@ -1,0 +1,6 @@
+type: rpm-ostree
+install:
+  - swayfx
+  - waybar
+  - xdg-desktop-portal-wlr
+  - brightnessctl
