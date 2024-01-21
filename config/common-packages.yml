@@ -1,4 +1,6 @@
 type: rpm-ostree
+repos:
+  - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 install:
 # display manager
   - sddm
@@ -54,6 +56,7 @@ install:
 
 # terminal
   - xfce4-terminal
+  - kitty
 
 # notifications
   - dunst
@@ -68,3 +71,25 @@ install:
   - paper-icon-theme
   - breeze-icon-theme 
   - papirus-icon-theme
+
+# utilities
+  - tailscale
+  - tmux
+  - screen
+
+# virtualization
+  - qemu-kvm
+  - libvirt-daemon
+  - libvirt-daemon-config-network
+  - libvirt-daemon-driver-interface
+  - libvirt-daemon-driver-network
+  - libvirt-daemon-driver-nwfilter
+  - libvirt-daemon-driver-qemu
+  - libvirt-daemon-driver-secret
+  - libvirt-daemon-driver-storage-core
+  - libvirt-daemon-driver-storage-disk
+  - libvirt-daemon-driver-storage-scsi
+  - libvirt-daemon-kvm
+  - libvirt-client
+  - virt-install
+  - virt-manager

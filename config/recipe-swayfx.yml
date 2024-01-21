@@ -12,13 +12,10 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 modules:
   - from-file: common-packages.yml
   - from-file: common-files.yml
-           
-  - from-file: swayfx-packages.yml
-  
-  - type: files
-    files:
-      - hyprland/usr: /usr 
-       
-  - from-file: swayfx-scripts.yml   
-
+  - from-file: common-akmods.yml
+  - from-file: common-fonts.yml
+  - from-file: common-yafti.yml
+  - from-file: common-bling.yml
   - from-file: common-scripts.yml
+  - from-file: swayfx-packages.yml
+  - from-file: swayfx-scripts.yml   

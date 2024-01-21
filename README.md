@@ -9,6 +9,8 @@
 
 [![secureblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
 
+**NOTE**: This is a fork of the [wayblueorg/wayblue](https://github.com/wayblueorg/wayblue) repository, which is in turn a fork of the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository. This fork includes testing/unstable/opinionated changes from the upstream wayblue repository for my personal use cases.
+
 This repo takes the [uBlue](https://universal-blue.org/) base starting point and builds out minimally-opinionated images for the following wayland compositors
 
 - wayfire (with wf-shell)

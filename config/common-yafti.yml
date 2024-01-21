@@ -1,0 +1,5 @@
+type: yafti
+custom-flatpaks:
+  - LibreWolf (Browser): io.gitlab.librewolf-community
+  - Pods (Graphical Podman Frontend): com.github.marhkb.Pods
+  - Flatseal (Permission Manager): com.github.marhkb.Pods
