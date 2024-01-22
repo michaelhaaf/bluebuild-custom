@@ -32,6 +32,7 @@ install:
 # sound
   - wireplumber
   - pipewire
+  - mpd
 
 # networking
   - network-manager-applet
