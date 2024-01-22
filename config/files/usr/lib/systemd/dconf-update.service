@@ -1,0 +1,6 @@
+# Adapted from bsherman/ublue-custom https://github.com/search?q=repo%3Absherman%2Fublue-custom%20dconf&type=code
+[Unit]
+Description=Update the dconf database onboot
+Documentation=https://github.com/coreos/rpm-ostree/issues/1944
+Type=oneshot
+ExecStart=/usr/bin/dconf update

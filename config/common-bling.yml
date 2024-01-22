@@ -3,6 +3,4 @@ install:
   - justfiles
   - nix-installer
   - ublue-os-wallpapers
-  - ublue-os-update
-  - devpod
   - container-tools

@@ -41,6 +41,7 @@ jobs:
         recipe:
           - recipe-sway.yml
           - recipe-sway-nvidia.yml
+          - recipe-swayfx.yml
           - recipe-hyprland.yml
           - recipe-hyprland-nvidia.yml
           - recipe-river.yml
