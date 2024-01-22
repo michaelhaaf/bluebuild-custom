@@ -40,13 +40,13 @@ jobs:
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe-sway.yml
-          - recipe-sway-nvidia.yml
+          # - recipe-sway-nvidia.yml
           - recipe-swayfx.yml
           - recipe-hyprland.yml
-          - recipe-hyprland-nvidia.yml
-          - recipe-river.yml
-          - recipe-wayfire.yml
-          - recipe-wayfire-nvidia.yml
+          # - recipe-hyprland-nvidia.yml
+          # - recipe-river.yml
+          # - recipe-wayfire.yml
+          # - recipe-wayfire-nvidia.yml
 # !!!
 
     steps:
