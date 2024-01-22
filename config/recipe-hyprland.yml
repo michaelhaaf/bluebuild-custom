@@ -13,9 +13,9 @@ modules:
   - from-file: common-akmods.yml
   - from-file: common-bling.yml
   - from-file: common-packages.yml
+  - from-file: common-files.yml
   - from-file: common-fonts.yml
   - from-file: common-yafti.yml
-  - from-file: common-files.yml
   - from-file: common-scripts.yml
   - type: files
     files:
