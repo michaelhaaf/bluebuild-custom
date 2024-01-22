@@ -1,6 +1,6 @@
 type: rpm-ostree
 repos:
-  - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%os_version%/swayfx-swayfx-fedora-%os_version%.repo
+  - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
 install:
   - swayfx
   - waybar
