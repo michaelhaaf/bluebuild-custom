@@ -35,6 +35,7 @@ install:
   - wireplumber
   - pipewire
   - pamixer
+  - mpd
 
 # networking
   - network-manager-applet
