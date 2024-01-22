@@ -47,6 +47,7 @@ install:
   - mpd
   - ncmpcpp
   - sox
+  - mpd
 
 # networking
   - network-manager-applet
