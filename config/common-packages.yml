@@ -76,6 +76,8 @@ install:
   - tailscale
   - tmux
   - screen
+  - pass
+  - pass-otp
 
 # virtualization
   - qemu-kvm

@@ -1,0 +1,15 @@
+- post-install script for systmctl?
+ 
+eg. (https://github.com/search?q=repo%3Absherman%2Fublue-custom%20dconf&type=code)
+
+```
+systemctl disable docker.socket
+systemctl unmask dconf-update.service
+systemctl enable dconf-update.service
+systemctl enable rpm-ostree-countme.timer
+systemctl enable tailscaled.service
+```
+
+- workflow trigger only on diff? 
+
+i.e. separate workflow files, or matrix conditional idea like https://stackoverflow.com/questions/65384420/how-do-i-make-a-github-action-matrix-element-conditional
