@@ -2,4 +2,3 @@ type: akmods
 install:
   - openrazer
   - openrgb
-  - zenpower
