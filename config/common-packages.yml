@@ -1,4 +1,10 @@
 type: rpm-ostree
+repos:
+  - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+  - https://repository.mullvad.net/rpm/stable/mullvad.repo
+  - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+optfix:
+  - Mullvad VPN
 install:
 # display manager
   - sddm
@@ -54,6 +60,7 @@ install:
 
 # terminal
   - xfce4-terminal
+  - kitty
 
 # notifications
   - dunst
@@ -68,3 +75,28 @@ install:
   - paper-icon-theme
   - breeze-icon-theme 
   - papirus-icon-theme
+
+# utilities
+  - tailscale
+  - mullvad-vpn
+  - tmux
+  - screen
+  - pass
+  - pass-otp
+
+# virtualization
+  - qemu-kvm
+  - libvirt-daemon
+  - libvirt-daemon-config-network
+  - libvirt-daemon-driver-interface
+  - libvirt-daemon-driver-network
+  - libvirt-daemon-driver-nwfilter
+  - libvirt-daemon-driver-qemu
+  - libvirt-daemon-driver-secret
+  - libvirt-daemon-driver-storage-core
+  - libvirt-daemon-driver-storage-disk
+  - libvirt-daemon-driver-storage-scsi
+  - libvirt-daemon-kvm
+  - libvirt-client
+  - virt-install
+  - virt-manager
