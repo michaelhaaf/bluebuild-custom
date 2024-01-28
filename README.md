@@ -31,6 +31,7 @@ Changes and decisions in the images:
 
 Fedora and uBlue provide excellent base images and tooling for immutable image building. Aside from sway however, there aren't images available for wayland compositors. This repo aims to provide those images and provide them with sane defaults.
 
+<<<<<<< HEAD
 For more info on uBlue and BlueBuild, check out the [uBlue homepage](https://universal-blue.org/) and the [BlueBuild homepage](https://blue-build.org/).
 
 
@@ -42,16 +43,9 @@ For more info on uBlue, check out the [uBlue homepage](https://universal-blue.or
 
 ## Installation
 
-### Available Images
-> **Warning**
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) and should not be used in production, try it in a VM for a while!
-
-### Available Images
-=======
-> **Warning**
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) and should not be used in production, try it in a VM for a while!
-
 ### Maintained Images
+> **Warning**
+> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) and should not be used in production, try it in a VM for a while!
 
 - sway
 - hyprland
