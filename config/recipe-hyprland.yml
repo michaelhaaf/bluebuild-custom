@@ -21,5 +21,4 @@ modules:
     files:
       - hyprland/usr: /usr 
   - from-file: hyprland-scripts.yml   
-  - from-file: common-scripts.yml
   - type: signing

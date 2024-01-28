@@ -18,3 +18,7 @@ modules:
   - from-file: common-systemd.yml
   - from-file: sway-packages.yml
   - type: signing
+  - from-file: common-scripts.yml
+  - from-file: common-systemd.yml
+  - from-file: common-scripts.yml
+  - from-file: sway-packages.yml
