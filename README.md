@@ -11,12 +11,12 @@
 
 [![secureblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
 
+**NOTE**: This is a fork of the [wayblueorg/wayblue](https://github.com/wayblueorg/wayblue) repository, which is in turn a fork of the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository. This fork includes testing/unstable/opinionated changes from the upstream wayblue repository for my personal use cases.
+
 This repo takes the [uBlue](https://universal-blue.org/) base starting point and builds out minimally-opinionated images for the following wayland compositors
 
-- wayfire (with wf-shell)
 - hyprland (with waybar)
 - sway (with waybar)
-- river (with waybar)
 
 ## What
 
@@ -38,19 +38,23 @@ For more info on uBlue and BlueBuild, check out the [uBlue homepage](https://uni
 
 If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream. 
 
+For more info on uBlue, check out the [uBlue homepage](https://universal-blue.org/) and the [main uBlue repo](https://github.com/ublue-os/main/)
 
 ## Installation
 
 ### Available Images
+> **Warning**
+> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) and should not be used in production, try it in a VM for a while!
 
-- wayfire
-- wayfire-nvidia
+### Available Images
+=======
+> **Warning**
+> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) and should not be used in production, try it in a VM for a while!
+
+### Maintained Images
+
 - sway
-- sway-nvidia
 - hyprland
-- hyprland-nvidia
-- river (coming soon)
-- river-nvidia (coming soon)
 
 ### Rebasing
 
@@ -58,7 +62,7 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/wayblueorg/$IMAGE_NAME:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/michaelhaaf/$IMAGE_NAME:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -66,7 +70,7 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/wayblueorg/$IMAGE_NAME:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/michaelhaaf/$IMAGE_NAME:latest
   ```
 - Reboot again to complete the installation
   ```

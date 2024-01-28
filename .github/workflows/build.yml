@@ -20,14 +20,13 @@ jobs:
     strategy:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
+        # Add recipes for all the images you want to build here.
+        # Don't add module configuration files, you will get errors.
         recipe:
-          - recipe-sway.yml
           - recipe-sway-nvidia.yml
-          - recipe-hyprland.yml
           - recipe-hyprland-nvidia.yml
-          - recipe-river.yml
-          - recipe-wayfire.yml
           - recipe-wayfire-nvidia.yml
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
