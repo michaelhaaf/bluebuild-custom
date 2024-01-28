@@ -10,8 +10,17 @@ install:
   - sddm
   - sddm-themes
 
+# theme and GUI
+  - nwg-shell
+  - adwaita-qt5
+  - gnome-themes-extra
+  - gnome-icon-theme
+  - paper-icon-theme
+  - breeze-icon-theme 
+  - papirus-icon-theme
+
 # launcher
-  - wofi
+  - fuzzel
 
 # environment
   - xorg-x11-server-Xwayland
@@ -33,6 +42,8 @@ install:
   - wireplumber
   - pipewire
   - mpd
+  - ncmpcpp
+  - sox
 
 # networking
   - network-manager-applet
@@ -60,22 +71,11 @@ install:
   - kanshi
 
 # terminal
-  - xfce4-terminal
   - kitty
-
-# notifications
-  - dunst
+  - foot
 
 # mpv, since flatpak mpv and celluloid have issues
   - mpv
-
-# theme and GUI
-  - adwaita-qt5
-  - gnome-themes-extra
-  - gnome-icon-theme
-  - paper-icon-theme
-  - breeze-icon-theme 
-  - papirus-icon-theme
 
 # utilities
   - tailscale

@@ -3,7 +3,3 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-%OS_VERSION%/tofik-sway-fedora-%OS_VERSION%.repo
 install:
   - swaync
-  - hyprland
-  - waybar
-  - xdg-desktop-portal-hyprland
-  - brightnessctl
