@@ -35,18 +35,11 @@ jobs:
       fail-fast: false
 
       matrix:
-# !!!
         # Add recipes for all the images you want to build here.
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe-sway.yml
-          - recipe-sway-nvidia.yml
           - recipe-hyprland.yml
-          - recipe-hyprland-nvidia.yml
-          - recipe-river.yml
-          - recipe-wayfire.yml
-          - recipe-wayfire-nvidia.yml
-# !!!
 
     steps:
       # Checkout push-to-registry action GitHub repository
