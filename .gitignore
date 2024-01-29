@@ -1,5 +1,4 @@
 .idea
 cosign.key
 .directory
-*.kate-swp
 Containerfile
