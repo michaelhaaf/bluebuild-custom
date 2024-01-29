@@ -3,6 +3,7 @@
 **NOTE**: This used to be a fork of the [wayblueorg/wayblue](https://github.com/wayblueorg/wayblue) repository. It is now more-loosely based on the general [BlueBuild](https://blue-build.org) ecosystem. This fork includes testing/unstable/opinionated changes from upstream for my personal use cases.
 
 ## What
+For more info, check out the [BlueBuild homepage](https://blue-build.org/) and the [blue-build CLI](https://github.com/blue-build/cli)
 
 (From [wayblueorg](https://github.com/wayblueorg/wayblue)) Changes and decisions in the images:
 - Set saner SDDM defaults
