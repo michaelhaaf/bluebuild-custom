@@ -52,7 +52,5 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
 
-  - type: script
-    scripts:
-      # this sets up the proper policy & signing files for signed images to work
-      - signing.sh
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
