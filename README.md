@@ -1,43 +1,22 @@
-<h5 align="center">Notice: These images are all in an alpha state, use at your own risk.</h5>
+# michaelhaaf's Custom Immutable Images
 
-<p align="center">
-  <a href="https://github.com/wayblueorg/wayblue">
-    <img src="https://github.com/wayblueorg/wayblue/assets/129108030/38139f2c-e91e-40dd-88b1-951c1021c51c" href="[https://github.com/secureblue/secureblue](https://github.com/wayblueorg/wayblue)" width=180 />
-  </a>
-</p>
-
-<h1 align="center">wayblue</h1>
-
-
-[![secureblue](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml/badge.svg)](https://github.com/wayblueorg/wayblue/actions/workflows/build.yml)
-
-**NOTE**: This is a fork of the [wayblueorg/wayblue](https://github.com/wayblueorg/wayblue) repository, which is in turn a fork of the [ublue-os/startingpoint](https://github.com/ublue-os/startingpoint) repository. This fork includes testing/unstable/opinionated changes from the upstream wayblue repository for my personal use cases.
-
-This repo takes the [uBlue](https://universal-blue.org/) base starting point and builds out minimally-opinionated images for the following wayland compositors
-
-- hyprland (with waybar)
-- sway (with waybar)
+**NOTE**: This used to be a fork of the [wayblueorg/wayblue](https://github.com/wayblueorg/wayblue) repository. It is now more-loosely based on the general [BlueBuild](https://blue-build.org) ecosystem. This fork includes testing/unstable/opinionated changes from upstream for my personal use cases.
 
 ## What
 
-Changes and decisions in the images:
+(From [wayblueorg](https://github.com/wayblueorg/wayblue)) Changes and decisions in the images:
 - Set saner SDDM defaults
 - Set saner wf-shell defaults
 - Set saner waybar defaults (coming soon)
 - Add a reasonable suite of tools that are needed to have a working desktop with a wayland compositor 
 - Build in a minimally opinionated config for each compositor and tools that works out of the box
 
-## Why
-
-Fedora and uBlue provide excellent base images and tooling for immutable image building. Aside from sway however, there aren't images available for wayland compositors. This repo aims to provide those images and provide them with sane defaults.
-
-<<<<<<< HEAD
-For more info on uBlue and BlueBuild, check out the [uBlue homepage](https://universal-blue.org/) and the [BlueBuild homepage](https://blue-build.org/).
-
+My own changes
+- Packages I like as well as some of the setup steps.
 
 ## Customization
 
-If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream. 
+(From [wayblueorg](https://github.com/wayblueorg/wayblue): If you want to add your own customizations on top of wayblue, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to a wayblue image. This will allow you to apply your customizations to wayblue in a concise and maintainable way, without the need to constantly sync with upstream. 
 
 For more info on uBlue, check out the [uBlue homepage](https://universal-blue.org/) and the [main uBlue repo](https://github.com/ublue-os/main/)
 
@@ -73,8 +52,6 @@ To rebase an existing Silverblue/Kinoite installation to the latest build:
   
 ### Post-install
 
-After installation, [yafti](https://github.com/ublue-os/yafti) will open. Make sure to follow the steps listed carefully and read the directions closely.
-
 #### Nvidia
 If you are using an nvidia image, run this after installation:
 
@@ -84,11 +61,3 @@ rpm-ostree kargs \
     --append=modprobe.blacklist=nouveau \
     --append=nvidia-drm.modeset=1
 ```
-
-## Contributing
-
-Follow the [contributing documentation](CONTRIBUTING.md#contributing), and make sure to respect the [CoC](CODE_OF_CONDUCT.md).
-
-### Development
-
-For local Development [building locally](CONTRIBUTING.md#building-locally) is the recommended approach.

@@ -1,4 +1,4 @@
-name: build-wayblue
+name: bluebuild
 on:
   schedule:
     - cron: "00 17 * * *" # build at 17:00 UTC every day 
@@ -11,7 +11,7 @@ on:
   workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild:
-    name: Build wayblue
+    name: Build custom image
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -28,26 +28,8 @@ jobs:
           - recipe-wayfire-nvidia.yml
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Add yq (for reading recipe.yml)
-        uses: mikefarah/yq@v4.40.5
-
-      - name: Gather image data from recipe
-        run: |
-          echo "IMAGE_NAME=$(yq '.name' ./config/${{ matrix.recipe }})" >> $GITHUB_ENV
-          echo "IMAGE_MAJOR_VERSION=$(yq '.image-version' ./config/${{ matrix.recipe }})" >> $GITHUB_ENV
-          BASE_IMAGE=$(yq '.base-image' ./config/${{ matrix.recipe }})
-          echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
-
-      - name: Verify base image
-        uses: EyeCantCU/cosign-action/verify@v0.2.2
-        with:
-          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
-
-      - name: Build wayblue
-        uses: blue-build/github-action@v1.1.0
+      - name: Build custom image
+        uses: blue-build/github-action@v1.1
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
