@@ -1,5 +1,3 @@
-import '100-bling.just'
-
 # Create custom CLI container with same hostname as host
 distrobox-cli:
   distrobox create --image ghcr.io/michaelhaaf/ublue-cli:latest -n cli -Y --init-hooks "echo '$(uname -n)' > /etc/hostname; hostname '$(uname -n)'"
