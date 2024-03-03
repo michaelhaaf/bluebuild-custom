@@ -67,6 +67,8 @@ install:
   - imv
   - p7zip
   - unrar-free
+  - gvfs-smb
+  - dolphin
 
 # screenshot
   - slurp
