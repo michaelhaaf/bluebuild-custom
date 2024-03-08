@@ -47,9 +47,6 @@ install:
   - mpd
   - ncmpcpp
   - sox
-  - mpd
-  - ncmpcpp
-  - sox
 
 # networking
   - network-manager-applet
@@ -70,9 +67,10 @@ install:
   - gvfs-smb
   - dolphin
 
-# screenshot
+# screenshot/recording
   - slurp
   - grim
+  - wf-recorder
 
 # display
   - wlr-randr
