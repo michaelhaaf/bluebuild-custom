@@ -3,6 +3,7 @@ repos:
   - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
   - https://repository.mullvad.net/rpm/stable/mullvad.repo
   - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
 optfix:
   - Mullvad VPN
 install:
@@ -10,8 +11,14 @@ install:
   - sddm
   - sddm-themes
 
-# theme and GUI
+# GUI
   - nwg-shell
+  - aylurs-gtk-shell
+  - swww
+  - waypaper
+
+
+# Theme
   - adwaita-qt5
   - gnome-themes-extra
   - gnome-icon-theme
@@ -39,6 +46,7 @@ install:
   - vulkan-tools
   - google-noto-emoji-fonts
   - gnome-disk-utility
+  - fcitx5
   
 # sound
   - wireplumber
