@@ -1,11 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: swayfx-nvidia
+name: swayfx
 # description will be included in the image's metadata
-description: swayfx image based on sericiea-nvidia
-
+description: swayfx image based on sericiea
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/sericea-nvidia
+base-image: ghcr.io/ublue-os/sericea
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
