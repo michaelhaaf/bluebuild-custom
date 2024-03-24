@@ -17,4 +17,4 @@ modules:
   - from-file: common-scripts.yml
   - type: signing
   - from-file: common-systemd.yml
-  - from-file: sway-packages.yml
+  - from-file: swayfx-packages.yml
