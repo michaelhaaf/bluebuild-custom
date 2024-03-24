@@ -1,0 +1,10 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-%OS_VERSION%/tofik-sway-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
+install:
+  - swaync
+  - swayfx
+remove:
+  - sway
+  - sway-config-fedora
