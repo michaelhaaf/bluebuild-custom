@@ -7,4 +7,3 @@ install:
   - swayfx
 remove:
   - sway
-  - sway-config-fedora
