@@ -24,10 +24,8 @@ jobs:
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe-sway.yml
-          - recipe-swayfx.yml
           - recipe-sway-nvidia.yml
-          - recipe-swayfx-nvidia.yml
-          - recipe-hyprland-nvidia.yml
+          - recipe-combined.yml
           - recipe-combined-nvidia.yml
 
     steps:
