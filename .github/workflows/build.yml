@@ -28,6 +28,7 @@ jobs:
           - recipe-sway-nvidia.yml
           - recipe-swayfx-nvidia.yml
           - recipe-hyprland-nvidia.yml
+          - recipe-combined-nvidia.yml
 
     steps:
       - name: Build custom image
