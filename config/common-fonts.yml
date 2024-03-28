@@ -1,6 +1,7 @@
 type: fonts
 fonts:
   nerd-fonts:
+    - Iosevka
     - FiraCode
     - Hack
     - SourceCodePro
