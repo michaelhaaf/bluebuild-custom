@@ -36,8 +36,13 @@ install:
   - gnome-keyring
   - pavucontrol
   - playerctl
+  - qt5ct
+  - qt5-wayland
+  - qt6-wayland
   - qt5-qtwayland
   - qt6-qtwayland
+  - glfw-wayland
+  - xlsclients
   - vulkan-validation-layers
   - vulkan-tools
   - google-noto-emoji-fonts
