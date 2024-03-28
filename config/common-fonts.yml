@@ -8,3 +8,10 @@ fonts:
     - Terminus
     - JetBrainsMono
     - NerdFontsSymbolsOnly
+  google-fonts:
+    - Open Sans
+    - Source Serif 4
+    - Source Sans 3
+    - IBM Plex Sans
+    - IBM Plex Serif
+    - EB Garamond

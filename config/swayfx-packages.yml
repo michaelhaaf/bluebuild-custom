@@ -5,5 +5,3 @@ repos:
 install:
   - swaync
   - swayfx
-remove:
-  - sway
