@@ -1,5 +1,6 @@
 type: systemd
 system:
   enabled:
-    - mullvad-daemon
+    - tailscaled.service
+    - libvirtd.service
 
