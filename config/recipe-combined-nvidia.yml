@@ -13,15 +13,15 @@ modules:
   - from-file: common-files.yml
   - from-file: common-akmods.yml
   - from-file: common-packages.yml
+  - from-file: hyprland-packages.yml
+  - from-file: swayfx-packages.yml
   - from-file: common-fonts.yml
   - from-file: common-systemd.yml
   - from-file: common-scripts.yml
   - from-file: common-flatpaks.yml
-  - from-file: hyprland-packages.yml
-  - from-file: swayfx-packages.yml
   - type: files
     files:
-      - hyprland/usr: /usr 
-      - swayfx/usr: /usr 
-  - from-file: hyprland-scripts.yml   
+      - hyprland/usr: /usr
+      - swayfx/usr: /usr
+  - from-file: hyprland-scripts.yml
   - type: signing

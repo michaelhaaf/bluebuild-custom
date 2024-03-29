@@ -19,7 +19,7 @@ install:
   - gnome-themes-extra
   - gnome-icon-theme
   - paper-icon-theme
-  - breeze-icon-theme 
+  - breeze-icon-theme
   - papirus-icon-theme
 
 # launcher
@@ -37,18 +37,15 @@ install:
   - pavucontrol
   - playerctl
   - qt5ct
-  - qt5-wayland
-  - qt6-wayland
   - qt5-qtwayland
   - qt6-qtwayland
-  - glfw-wayland
   - xlsclients
   - vulkan-validation-layers
   - vulkan-tools
   - google-noto-emoji-fonts
   - gnome-disk-utility
   - fcitx5
-  
+
 # sound
   - wireplumber
   - pipewire
@@ -67,7 +64,7 @@ install:
 
 # file manager
   - thunar
-  - thunar-archive-plugin 
+  - thunar-archive-plugin
   - thunar-volman
   - xarchiver
   - imv
