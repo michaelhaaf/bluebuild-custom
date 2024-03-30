@@ -10,18 +10,18 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: common-files.yml
+  - type: files
+    files:
+      - usr: /usr
+      - hyprland/usr: /usr
+      - swayfx/usr: /usr
+  - from-file: common-scripts.yml
   - from-file: common-akmods.yml
   - from-file: common-packages.yml
   - from-file: hyprland-packages.yml
+  - from-file: hyprland-scripts.yml
   - from-file: swayfx-packages.yml
   - from-file: common-fonts.yml
   - from-file: common-systemd.yml
-  - from-file: common-scripts.yml
   - from-file: common-flatpaks.yml
-  - type: files
-    files:
-      - hyprland/usr: /usr
-      - swayfx/usr: /usr
-  - from-file: hyprland-scripts.yml
   - type: signing
