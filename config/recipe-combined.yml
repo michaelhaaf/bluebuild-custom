@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: combined-nvidia
+name: combined
 # description will be included in the image's metadata
 description: swayfx and hyprland on one system.
 
@@ -21,7 +21,7 @@ modules:
   - from-file: swayfx-packages.yml
   - type: files
     files:
-      - hyprland/usr: /usr 
-      - swayfx/usr: /usr 
-  - from-file: hyprland-scripts.yml   
+      - hyprland/usr: /usr
+      - swayfx/usr: /usr
+  - from-file: hyprland-scripts.yml
   - type: signing
