@@ -1,0 +1,11 @@
+[Unit]
+Description=Create SDDM user on system boot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/groupadd -r sddm
+ExecStart=/usr/sbin/useradd -r -g sddm -c "SDDM Greeter Account" -d /var/lib/sddm -s /usr/sbin/nologin sddm
+ExecStart=/usr/bin/systemctl disable create-sddm-user.service
+
+[Install]
+WantedBy=multi-user.target

@@ -24,4 +24,8 @@ modules:
   - from-file: common-fonts.yml
   - from-file: common-systemd.yml
   - from-file: common-flatpaks.yml
+  - type: systemd
+    system:
+      enabled:
+        - sddm-boot.service
   - type: signing
