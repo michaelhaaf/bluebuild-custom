@@ -7,9 +7,9 @@ install:
 # display manager
   - sddm
   - sddm-themes
-  - qt5‑qtgraphicaleffects
-  - qt5‑qtquickcontrols2
-  - qt5‑qtsvg
+  - qt5-qtgraphicaleffects
+  - qt5-qtquickcontrols2
+  - qt5-qtsvg
 
 # GUI
   - nwg-shell
