@@ -106,6 +106,7 @@ install:
   - screen
   - pass
   - pass-otp
+  - rocm-smi
 
 # virtualization
   - qemu-kvm
