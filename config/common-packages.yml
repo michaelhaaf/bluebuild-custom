@@ -36,6 +36,7 @@ install:
   - dbus-tools
   - dbus-daemon
   - wl-clipboard
+  - wtype
   - gnome-keyring
   - pavucontrol
   - playerctl

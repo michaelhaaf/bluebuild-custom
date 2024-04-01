@@ -4,3 +4,4 @@ install:
   - mako
   - waybar
   - xdg-desktop-portal-hyprland
+  - brightnessctl
