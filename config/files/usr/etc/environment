@@ -1,2 +1,2 @@
 GTK_THEME=adw-gtk3-dark
-QT_STYLE_OVERRIDE=adw-gtk3-dark
+QT_STYLE_OVERRIDE=kvantum
