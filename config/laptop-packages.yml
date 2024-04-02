@@ -1,0 +1,7 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
+install:
+  - asusctl
+  - supergfxctl
+  - asusctl-rog-gui
