@@ -2,3 +2,5 @@
 cosign.key
 .directory
 Containerfile
+cosign.private
+/Containerfile
