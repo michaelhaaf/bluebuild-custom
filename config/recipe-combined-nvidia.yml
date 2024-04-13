@@ -29,3 +29,6 @@ modules:
       enabled:
         - sddm-boot.service
   - type: signing
+  - type: files
+    files:
+      - usr: /usr
