@@ -11,6 +11,8 @@ install:
 # QT
   - qt5-qtgraphicaleffects
   - qt5-qtquickcontrols2
+  - qt5-qtvirtualkeyboard
+  - qt6-qtvirtualkeyboard
   - qt5-qtsvg
   - qt6-qtsvg
   - qt5-qtwayland
