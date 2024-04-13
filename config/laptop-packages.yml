@@ -5,3 +5,5 @@ install:
   - asusctl
   - supergfxctl
   - asusctl-rog-gui
+  - fprintd
+  - authconfig
