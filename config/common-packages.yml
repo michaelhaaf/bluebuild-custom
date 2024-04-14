@@ -55,7 +55,6 @@ install:
   - xlsclients
   - vulkan-validation-layers
   - vulkan-tools
-  - google-noto-emoji-fonts
   - gnome-disk-utility
   - fcitx5
 

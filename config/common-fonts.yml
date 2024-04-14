@@ -1,32 +1,34 @@
-type: fonts
-fonts:
-  nerd-fonts:
-    - Iosevka
-    - FiraCode
-    - JetBrainsMono
-    - NerdFontsSymbolsOnly
-  google-fonts:
-    - Fira Sans
-    - Fira Sans Condensed
-    - Fira Sans Extra Condensed
-    - Merriweather
-    - Cardo
-    - Libre Baskerville
+modules:
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - Iosevka
+        - FiraCode
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Fira Sans
+        - Fira Sans Condensed
+        - Fira Sans Extra Condensed
+        - Merriweather
+        - Cardo
+        - Libre Baskerville
 
-type: rpm-ostree
-install:
-  - cabextract # for extracting MS fonts from source
-  - ibm-plex-fonts-all
-  - aajohan-comfortaa-fonts
-  - amiri-fonts-all
-  - cjkuni-ukai-fonts
-  - adobe-source-code-pro-fonts
-  - adobe-source-code-vf-fonts
-  - adobe-source-sans-pro-fonts
-  - leland-fonts-all
-  - lilypond-emmentaler-fonts
-  - lilypond-fonts-common
+  - type: rpm-ostree
+    install:
+      - cabextract # for extracting MS fonts from source
+      - google-noto-emoji-fonts
+      - ibm-plex-fonts-all
+      - aajohan-comfortaa-fonts
+      - amiri-fonts-all
+      - cjkuni-ukai-fonts
+      - adobe-source-code-pro-fonts
+      - adobe-source-code-vf-fonts
+      - adobe-source-sans-pro-fonts
+      - leland-fonts-all
+      - lilypond-emmentaler-fonts
+      - lilypond-fonts-common
 
-type: script
-scripts:
-    - msfontinstall.sh
+  - type: script
+    scripts:
+      - msfontinstall.sh
