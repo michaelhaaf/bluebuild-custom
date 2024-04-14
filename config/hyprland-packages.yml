@@ -1,15 +1,6 @@
 type: rpm-ostree
 install:
   - hyprland
-  - gbm
-  - hyprland-protocols
-  - hyprlang
-  - libdrm
-  - libpipewire-0.3
-  - libspa-0.2
-  - sdbus-cpp
-  - wayland-client
-  - wayland-protocols
   - xdg-desktop-portal-hyprland
   - xdg-desktop-portal-gtk
   - mako
