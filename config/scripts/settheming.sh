@@ -12,7 +12,7 @@ sed -i 's/Inherits=Adwaita/Inherits=ePapirus/' /usr/share/icons/default/index.th
 unzip -q /usr/share/fonts/et-book.zip -d /usr/share/fonts/
 ln -s /usr/share/fontconfig/conf.avail/50-user.conf /usr/etc/fonts/conf.d
 ln -s /usr/share/fontconfig/conf.avail/51-local.conf /usr/etc/fonts/conf.d
-rm /usr/share/etc/conf.d/.gitkeep
+rm /usr/etc/fonts/conf.d/.gitkeep
 
 tar -xf /usr/share/themes/adw-gtk3v5.3.tar.xz -C /usr/share/themes/
 tar -xzf /usr/share/icons/Papirus.tar.gz -C /usr/share/icons/
