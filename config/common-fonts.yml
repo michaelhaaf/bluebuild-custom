@@ -17,6 +17,7 @@ modules:
   - type: rpm-ostree
     install:
       - cabextract # for extracting MS fonts from source
+      - xorg-x11-font-utils # dependency of msttcore-fonts-installer-2.6-1.noarch
       - google-noto-emoji-fonts
       - ibm-plex-fonts-all
       - aajohan-comfortaa-fonts
@@ -31,4 +32,4 @@ modules:
 
   - type: script
     scripts:
-      - msfontinstall.sh
+      - msfontinstall.sh 
