@@ -23,8 +23,6 @@ jobs:
         # Add recipes for all the images you want to build here.
         # Don't add module configuration files, you will get errors.
         recipe:
-          - recipe-sway.yml
-          - recipe-sway-nvidia.yml
           - recipe-combined.yml
           - recipe-combined-nvidia.yml
 
