@@ -24,7 +24,7 @@ install:
   - kvantum
 
 # GTK shell
-  - nwg-shell
+  - nwg-look
   - aylurs-gtk-shell
   - swww
   - waypaper
