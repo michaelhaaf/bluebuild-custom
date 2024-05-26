@@ -15,20 +15,17 @@ modules:
       - usr: /usr
       - hyprland/usr: /usr
       - swayfx/usr: /usr
-  - from-file: common-scripts.yml
-  - from-file: common-akmods.yml
-  - from-file: common-packages.yml
-  - from-file: hyprland-packages.yml
-  - from-file: hyprland-scripts.yml
-  - from-file: swayfx-packages.yml
-  - from-file: common-fonts.yml
-  - from-file: common-systemd.yml
-  - from-file: common-flatpaks.yml
   - type: systemd
     system:
       enabled:
         - sddm-boot.service
+  - from-file: common/scripts.yml
+  - from-file: common/akmods.yml
+  - from-file: common/packages.yml
+  - from-file: common/fonts.yml
+  - from-file: common/systemd.yml
+  - from-file: common/flatpaks.yml
+  - from-file: hyprland/packages.yml
+  - from-file: hyprland/scripts.yml
+  - from-file: swayfx/packages.yml
   - type: signing
-  - type: files
-    files:
-      - usr: /usr

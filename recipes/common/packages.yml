@@ -25,9 +25,9 @@ install:
 
 # GTK shell
   - nwg-look
+  - nwg-clipman
   - aylurs-gtk-shell
-  - swww
-  - waypaper
+  - xdg-desktop-portal-gtk
 
 # Theme
   - gnome-themes-extra
@@ -48,6 +48,7 @@ install:
   - dbus-tools
   - dbus-daemon
   - wl-clipboard
+  - cliphist
   - wtype
   - gnome-keyring
   - pavucontrol
@@ -115,6 +116,11 @@ install:
   - pass-otp
   - neovim
   - rocm-smi
+  - swww
+  - waypaper
+  - waybar
+  - brightnessctl
+  - mako
 
 # virtualization
   - qemu-kvm
