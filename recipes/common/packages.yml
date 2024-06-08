@@ -121,6 +121,7 @@ install:
   - waybar
   - brightnessctl
   - mako
+  - fd-find
 
 # virtualization
   - qemu-kvm
