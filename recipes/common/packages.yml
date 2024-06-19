@@ -88,12 +88,12 @@ install:
 # screenshot/recording
   - slurp
   - grim
+  - grimshot
   - wf-recorder
 
 # display
   - wlr-randr
   - wlsunset
-  - grimshot
   - light
   - swaybg
   - swaylock
@@ -115,6 +115,7 @@ install:
   - pass
   - pass-otp
   - neovim
+  - emacs
   - rocm-smi
   - swww
   - waypaper
