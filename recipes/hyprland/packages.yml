@@ -6,11 +6,11 @@ install:
   - xdg-desktop-portal-hyprland
   - hyprland-contrib
   - hyprland-plugins
-  - hypridle
   - hyprpaper
   - hyprland-autoname-workspaces
-  - hyprlock
   - hyprshot
   - hyprnome
   - hyprdim
   - pyprland
+  - swayidle
+  - swaylock
