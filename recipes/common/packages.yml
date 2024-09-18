@@ -96,8 +96,6 @@ install:
   - wlsunset
   - light
   - swaybg
-  - swaylock
-  - swayidle
   - kanshi
 
 # terminal

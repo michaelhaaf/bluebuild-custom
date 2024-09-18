@@ -9,3 +9,5 @@ install:
   - swayfx
   - SwayNotificationCenter
   - waybar
+  - swaylock
+  - swayidle
