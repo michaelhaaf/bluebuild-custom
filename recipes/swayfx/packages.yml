@@ -5,9 +5,10 @@ repos:
 remove:
   - sway
   - sway-config-upstream
+  - swaylock
 install:
   - swayfx
   - SwayNotificationCenter
   - waybar
-  - swaylock
+  - swaylock-effects
   - swayidle
