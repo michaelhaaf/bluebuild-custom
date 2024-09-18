@@ -14,3 +14,6 @@ install:
   - hyprdim
   - pyprland
   - swayidle
+  - cmake
+  - meson
+  - cpio
