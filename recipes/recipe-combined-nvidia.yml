@@ -10,11 +10,13 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: common/files.yml
   - type: files
     files:
-      - usr: /usr
-      - hyprland/usr: /usr
-      - swayfx/usr: /usr
+      - source: hyprland/usr
+        destination: /usr
+      - source: swayfx/usr
+        destination: /usr
   - type: systemd
     system:
       enabled:
