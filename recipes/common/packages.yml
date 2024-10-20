@@ -119,7 +119,6 @@ install:
   - waypaper
   - waybar
   - brightnessctl
-  - mako
   - fd-find
 
 # virtualization
