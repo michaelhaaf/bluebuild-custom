@@ -1,6 +1,7 @@
 type: rpm-ostree
 repos:
   - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/heus-sueh/packages/repo/fedora-%OS_VERSION%/heus-sueh-fedora-%OS_VERSION%.repo
 install:
   - hyprland
   - xdg-desktop-portal-hyprland
@@ -17,3 +18,4 @@ install:
   - cmake
   - meson
   - cpio
+  - matugen
