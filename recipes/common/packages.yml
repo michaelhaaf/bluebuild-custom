@@ -120,6 +120,7 @@ install:
   - waybar
   - brightnessctl
   - fd-find
+  - wayland-utils
 
 # virtualization
   - qemu-kvm
