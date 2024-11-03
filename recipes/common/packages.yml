@@ -121,6 +121,7 @@ install:
   - brightnessctl
   - fd-find
   - wayland-utils
+  - eza
 
 # virtualization
   - qemu-kvm
