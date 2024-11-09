@@ -63,7 +63,6 @@ install:
   - wireplumber
   - pipewire
   - pamixer
-  - mpd
   - ncmpcpp
   - sox
 
@@ -139,3 +138,4 @@ install:
   - libvirt-client
   - virt-install
   - virt-manager
+  - waydroid
