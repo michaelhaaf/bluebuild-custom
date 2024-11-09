@@ -30,4 +30,6 @@ modules:
   - from-file: hyprland/packages.yml
   - from-file: hyprland/scripts.yml
   - from-file: swayfx/packages.yml
+  - type: justfiles
+    validate: true
   - type: signing
