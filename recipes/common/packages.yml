@@ -121,6 +121,7 @@ install:
   - fd-find
   - wayland-utils
   - eza
+  - lzip
 
 # virtualization
   - qemu-kvm
