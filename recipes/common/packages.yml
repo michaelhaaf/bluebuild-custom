@@ -4,12 +4,13 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/solopasha/astal/repo/fedora-%OS_VERSION%/solopasha-astal-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/alebastr/swayr/repo/fedora-%OS_VERSION%/alebastr-swayr-fedora-%OS_VERSION%.repo
 install:
-# login manager
+  # login manager
   - sddm
   - sddm-themes
 
-# QT
+  # QT
   - qt5-qtgraphicaleffects
   - qt5-qtquickcontrols2
   - qt5-qtvirtualkeyboard
@@ -24,14 +25,14 @@ install:
   - qt6ct
   - kvantum
 
-# GTK shell
+  # GTK shell
   - nwg-look
   - nwg-clipman
   - xdg-desktop-portal-gtk
   - astal
   - aylurs-gtk-shell2
 
-# Theme
+  # Theme
   - gnome-themes-extra
   - gnome-icon-theme
   - adwaita-icon-theme
@@ -39,10 +40,11 @@ install:
   - breeze-icon-theme
   - papirus-icon-theme
 
-# launcher
+  # launcher
   - fuzzel
+  - swayr
 
-# environment
+  # environment
   - xorg-x11-server-Xwayland
   - polkit
   - lxpolkit
@@ -61,21 +63,21 @@ install:
   - gnome-disk-utility
   - fcitx5
 
-# sound
+  # sound
   - wireplumber
   - pipewire
   - pamixer
   - ncmpcpp
   - sox
 
-# networking
+  # networking
   - gnome-control-center
   - network-manager-applet
   - bluez
   - bluez-tools
   - blueman
 
-# file manager
+  # file manager
   - thunar
   - thunar-archive-plugin
   - thunar-volman
@@ -86,28 +88,28 @@ install:
   - gvfs-smb
   - dolphin
 
-# screenshot/recording
+  # screenshot/recording
   - slurp
   - grim
   - grimshot
   - wf-recorder
 
-# display
+  # display
   - wlr-randr
   - wlsunset
   - light
   - swaybg
   - kanshi
 
-# terminal
+  # terminal
   - kitty
   - foot
   - xfce4-terminal
 
-# mpv, since flatpak mpv and celluloid have issues
+  # mpv, since flatpak mpv and celluloid have issues
   - mpv
 
-# utilities
+  # utilities
   - tailscale
   - tmux
   - screen
@@ -125,7 +127,7 @@ install:
   - eza
   - lzip
 
-# virtualization
+  # virtualization
   - qemu-kvm
   - libvirt-daemon
   - libvirt-daemon-config-network
