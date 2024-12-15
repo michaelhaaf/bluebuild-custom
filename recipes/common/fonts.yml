@@ -32,4 +32,4 @@ modules:
 
   - type: script
     scripts:
-      - msfontinstall.sh 
+      - msfontinstall.sh

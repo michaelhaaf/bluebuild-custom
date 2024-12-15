@@ -22,7 +22,7 @@ modules:
       enabled:
         - sddm-boot.service
   - from-file: common/scripts.yml
-  # - from-file: common/akmods.yml
+  - from-file: common/akmods.yml
   - from-file: common/packages.yml
   - from-file: common/fonts.yml
   - from-file: common/systemd.yml
