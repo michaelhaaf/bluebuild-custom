@@ -130,7 +130,7 @@ install:
 
   # hardware
   - openrgb
-  - corectl
+  - corectrl
   - lact
 
   # virtualization
