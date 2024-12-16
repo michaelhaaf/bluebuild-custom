@@ -1,4 +1,5 @@
 type: akmods
+base: main
 install:
 - openrazer
-- openrgb
+- v4l2loopback
