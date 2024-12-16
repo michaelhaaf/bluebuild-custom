@@ -41,11 +41,11 @@ install:
   - breeze-icon-theme
   - papirus-icon-theme
 
-  # launcher
+  # launcher -- to reorganize
   - fuzzel
   - swayr
 
-  # environment
+  # environment -- to reorganize
   - xorg-x11-server-Xwayland
   - polkit
   - lxpolkit
@@ -59,8 +59,6 @@ install:
   - pavucontrol
   - playerctl
   - xlsclients
-  - vulkan-validation-layers
-  - vulkan-tools
   - gnome-disk-utility
   - fcitx5
 
@@ -88,6 +86,7 @@ install:
   - unrar-free
   - gvfs-smb
   - dolphin
+  - lzip
 
   # screenshot/recording
   - slurp
@@ -95,11 +94,9 @@ install:
   - grimshot
   - wf-recorder
 
-  # display
+  # wayland
   - wlr-randr
   - wlsunset
-  - light
-  - swaybg
   - kanshi
 
   # terminal
@@ -107,31 +104,23 @@ install:
   - foot
   - xfce4-terminal
 
-  # mpv, since flatpak mpv and celluloid have issues
-  - mpv
-
   # utilities
   - tailscale
-  - tmux
-  - screen
+
+  # CLI tools, remove soon
   - pass
   - pass-otp
-  - neovim
-  - emacs
-  - rocm-smi
-  - swww
-  - waypaper
-  - waybar
-  - brightnessctl
   - fd-find
   - wayland-utils
   - eza
-  - lzip
 
-  # hardware
+  # hardware management
   - openrgb
+  - amdsmi
   - corectrl
   - lact
+  - brightnessctl
+  - light
 
   # virtualization
   - qemu-kvm
