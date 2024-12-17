@@ -4,3 +4,4 @@ user:
     - org.gtk.Gtk3theme.adw-gtk3
     - org.gtk.Gtk3theme.adw-gtk3-dark
     - org.mozilla.firefox
+    - org.openrgb.OpenRGB
