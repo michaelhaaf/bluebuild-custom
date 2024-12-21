@@ -24,7 +24,6 @@ jobs:
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe-combined.yml
-          - recipe-combined-nvidia.yml
 
     steps:
       - name: Build custom image
