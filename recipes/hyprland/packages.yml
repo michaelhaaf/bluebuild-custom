@@ -20,7 +20,6 @@ install:
   - hypridle
   - hyprsunset
   - hyprpolkitagent
-  - hyprwayland-scanner
   - hyprgraphics
   - hyprland-qtutils
   - pyprland
