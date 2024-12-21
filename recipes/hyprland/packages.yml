@@ -13,6 +13,16 @@ install:
   - hyprshot
   - hyprnome
   - hyprdim
+  - hyprsysteminfo
+  - hyprcursor
+  - hyprutils
+  - hyprlock
+  - hypridle
+  - hyprsunset
+  - hyprpolkitagent
+  - hyprwayland-scanner
+  - hyprgraphics
+  - hyprland-qtutils
   - pyprland
   - swayidle
   - cmake
