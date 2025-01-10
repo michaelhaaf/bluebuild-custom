@@ -154,6 +154,5 @@ install:
   - docker-compose-plugin
 
   # gh and act
-  - gh-cli
+  - gh
   - act-cli
-
