@@ -141,6 +141,7 @@ install:
   - virt-install
   - virt-manager
   - waydroid
+  - podman-compose
 
   # locale
   - glibc-common
