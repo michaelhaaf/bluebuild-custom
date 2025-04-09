@@ -157,3 +157,8 @@ install:
   # gh and act
   - gh
   - act-cli
+
+  # print and scan
+  - printer-driver-brlaser
+  - sane-frontends
+  - sane-backends
