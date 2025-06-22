@@ -114,7 +114,6 @@ install:
   - pass-otp
   - fd-find
   - wayland-utils
-  - eza
 
   # hardware management
   - amdsmi
