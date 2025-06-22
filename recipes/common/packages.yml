@@ -7,7 +7,6 @@ repos:
   - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/alebastr/swayr/repo/fedora-%OS_VERSION%/alebastr-swayr-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/ilyaz/LACT/repo/fedora-%OS_VERSION%/ilyaz-LACT-fedora-%OS_VERSION%.repo
 install:
   # login manager
   - sddm
@@ -118,7 +117,6 @@ install:
   # hardware management
   - amdsmi
   - corectrl
-  - lact
   - brightnessctl
   - light
 
