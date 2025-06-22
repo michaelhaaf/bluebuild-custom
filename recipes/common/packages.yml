@@ -1,160 +1,163 @@
-type: rpm-ostree
+type: dnf
 repos:
-  - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-  - https://download.docker.com/linux/fedora/docker-ce.repo
-  - https://cli.github.com/packages/rpm/gh-cli.repo
-  - https://copr.fedorainfracloud.org/coprs/goncalossilva/act/repo/fedora-%OS_VERSION%/goncalossilva-act-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/alebastr/swayr/repo/fedora-%OS_VERSION%/alebastr-swayr-fedora-%OS_VERSION%.repo
+  files:
+    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    - https://download.docker.com/linux/fedora/docker-ce.repo
+    - https://cli.github.com/packages/rpm/gh-cli.repo
+  copr:
+    - https://copr.fedorainfracloud.org/coprs/goncalossilva/act/repo/fedora-%OS_VERSION%/goncalossilva-act-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/alebastr/swayr/repo/fedora-%OS_VERSION%/alebastr-swayr-fedora-%OS_VERSION%.repo
 install:
-  # login manager
-  - sddm
-  - sddm-themes
+  packages:
+    # login manager
+    - sddm
+    - sddm-themes
 
-  # QT
-  - qt5-qtgraphicaleffects
-  - qt5-qtquickcontrols2
-  - qt5-qtvirtualkeyboard
-  - qt6-qtvirtualkeyboard
-  - qt5-qtsvg
-  - qt6-qtsvg
-  - qt5-qtwayland
-  - qt6-qtwayland
-  - qt5-qtbase
-  - qt6-qtbase
-  - qt5ct
-  - qt6ct
-  - kvantum
+    # QT
+    - qt5-qtgraphicaleffects
+    - qt5-qtquickcontrols2
+    - qt5-qtvirtualkeyboard
+    - qt6-qtvirtualkeyboard
+    - qt5-qtsvg
+    - qt6-qtsvg
+    - qt5-qtwayland
+    - qt6-qtwayland
+    - qt5-qtbase
+    - qt6-qtbase
+    - qt5ct
+    - qt6ct
+    - kvantum
 
-  # GTK shell
-  - nwg-look
-  - nwg-clipman
-  - xdg-desktop-portal-gtk
-  - astal
-  - aylurs-gtk-shell2
+    # GTK shell
+    - nwg-look
+    - nwg-clipman
+    - xdg-desktop-portal-gtk
+    - astal
+    - aylurs-gtk-shell2
 
-  # Theme
-  - gnome-themes-extra
-  - gnome-icon-theme
-  - adwaita-icon-theme
-  - paper-icon-theme
-  - breeze-icon-theme
-  - papirus-icon-theme
+    # Theme
+    - gnome-themes-extra
+    - gnome-icon-theme
+    - adwaita-icon-theme
+    - paper-icon-theme
+    - breeze-icon-theme
+    - papirus-icon-theme
 
-  # launcher -- to reorganize
-  - fuzzel
-  - swayr
+    # launcher -- to reorganize
+    - fuzzel
+    - swayr
 
-  # environment -- to reorganize
-  - xorg-x11-server-Xwayland
-  - polkit
-  - lxpolkit
-  - xdg-user-dirs
-  - dbus-tools
-  - dbus-daemon
-  - wl-clipboard
-  - cliphist
-  - wtype
-  - gnome-keyring
-  - pavucontrol
-  - playerctl
-  - xlsclients
-  - gnome-disk-utility
-  - fcitx5
+    # environment -- to reorganize
+    - xorg-x11-server-Xwayland
+    - polkit
+    - lxpolkit
+    - xdg-user-dirs
+    - dbus-tools
+    - dbus-daemon
+    - wl-clipboard
+    - cliphist
+    - wtype
+    - gnome-keyring
+    - pavucontrol
+    - playerctl
+    - xlsclients
+    - gnome-disk-utility
+    - fcitx5
 
-  # sound
-  - wireplumber
-  - pipewire
-  - pamixer
-  - ncmpcpp
-  - sox
+    # sound
+    - wireplumber
+    - pipewire
+    - pamixer
+    - ncmpcpp
+    - sox
 
-  # networking
-  - gnome-control-center
-  - network-manager-applet
-  - bluez
-  - bluez-tools
-  - blueman
+    # networking
+    - gnome-control-center
+    - network-manager-applet
+    - bluez
+    - bluez-tools
+    - blueman
 
-  # file manager
-  - thunar
-  - thunar-archive-plugin
-  - thunar-volman
-  - xarchiver
-  - imv
-  - p7zip
-  - unrar-free
-  - gvfs-smb
-  - dolphin
-  - lzip
+    # file manager
+    - thunar
+    - thunar-archive-plugin
+    - thunar-volman
+    - xarchiver
+    - imv
+    - p7zip
+    - unrar-free
+    - gvfs-smb
+    - dolphin
+    - lzip
 
-  # screenshot/recording
-  - slurp
-  - grim
-  - grimshot
-  - wf-recorder
+    # screenshot/recording
+    - slurp
+    - grim
+    - grimshot
+    - wf-recorder
 
-  # wayland
-  - wlr-randr
-  - wlsunset
-  - kanshi
+    # wayland
+    - wlr-randr
+    - wlsunset
+    - kanshi
 
-  # terminal
-  - kitty
-  - foot
-  - xfce4-terminal
+    # terminal
+    - kitty
+    - foot
+    - xfce4-terminal
 
-  # utilities
-  - tailscale
+    # utilities
+    - tailscale
 
-  # CLI tools, remove soon
-  - pass
-  - pass-otp
-  - fd-find
-  - wayland-utils
+    # CLI tools, remove soon
+    - pass
+    - pass-otp
+    - fd-find
+    - wayland-utils
 
-  # hardware management
-  - amdsmi
-  - corectrl
-  - brightnessctl
-  - light
+    # hardware management
+    - amdsmi
+    - corectrl
+    - brightnessctl
+    - light
 
-  # virtualization
-  - qemu-kvm
-  - libvirt-daemon
-  - libvirt-daemon-config-network
-  - libvirt-daemon-driver-interface
-  - libvirt-daemon-driver-network
-  - libvirt-daemon-driver-nwfilter
-  - libvirt-daemon-driver-qemu
-  - libvirt-daemon-driver-secret
-  - libvirt-daemon-driver-storage-core
-  - libvirt-daemon-driver-storage-disk
-  - libvirt-daemon-driver-storage-scsi
-  - libvirt-daemon-kvm
-  - libvirt-client
-  - virt-install
-  - virt-manager
-  - waydroid
-  - podman-compose
+    # virtualization
+    - qemu-kvm
+    - libvirt-daemon
+    - libvirt-daemon-config-network
+    - libvirt-daemon-driver-interface
+    - libvirt-daemon-driver-network
+    - libvirt-daemon-driver-nwfilter
+    - libvirt-daemon-driver-qemu
+    - libvirt-daemon-driver-secret
+    - libvirt-daemon-driver-storage-core
+    - libvirt-daemon-driver-storage-disk
+    - libvirt-daemon-driver-storage-scsi
+    - libvirt-daemon-kvm
+    - libvirt-client
+    - virt-install
+    - virt-manager
+    - waydroid
+    - podman-compose
 
-  # locale
-  - glibc-common
-  - glibc-all-langpacks
+    # locale
+    - glibc-common
+    - glibc-all-langpacks
 
-  # docker
-  - docker-ce
-  - docker-ce-cli
-  - containerd.io
-  - docker-buildx-plugin
-  - docker-compose-plugin
+    # docker
+    - docker-ce
+    - docker-ce-cli
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
 
-  # gh and act
-  - gh
-  - act-cli
+    # gh and act
+    - gh
+    - act-cli
 
-  # print and scan
-  - printer-driver-brlaser
-  - sane-frontends
-  - sane-backends
+    # print and scan
+    - printer-driver-brlaser
+    - sane-frontends
+    - sane-backends

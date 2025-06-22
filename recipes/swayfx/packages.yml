@@ -1,14 +1,17 @@
-type: rpm-ostree
+type: dnf
 repos:
-  - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+  copr:
+    - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
+    - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
 remove:
-  - sway
-  - sway-config-upstream
-  - swaylock
+  packages:
+    - sway
+    - sway-config-upstream
+    - swaylock
 install:
-  - swayfx
-  - SwayNotificationCenter
-  - waybar
-  - swaylock-effects
-  - swayidle
+  packages:
+    - swayfx
+    - SwayNotificationCenter
+    - waybar
+    - swaylock-effects
+    - swayidle

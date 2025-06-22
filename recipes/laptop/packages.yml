@@ -1,8 +1,10 @@
-type: rpm-ostree
+type: dnf
 repos:
-  - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
+  copr:
+    - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
 install:
-  - asusctl
-  - supergfxctl
-  - asusctl-rog-gui
-  - fprintd
+  packages:
+    - asusctl
+    - supergfxctl
+    - asusctl-rog-gui
+    - fprintd

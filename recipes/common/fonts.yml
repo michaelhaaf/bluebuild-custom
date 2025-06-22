@@ -14,21 +14,22 @@ modules:
         - Cardo
         - Libre Baskerville
 
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - cabextract # for extracting MS fonts from source
-      - xorg-x11-font-utils # dependency of msttcore-fonts-installer-2.6-1.noarch
-      - google-noto-emoji-fonts
-      - ibm-plex-fonts-all
-      - aajohan-comfortaa-fonts
-      - amiri-fonts-all
-      - cjkuni-ukai-fonts
-      - adobe-source-code-pro-fonts
-      - adobe-source-code-vf-fonts
-      - adobe-source-sans-pro-fonts
-      - leland-fonts-all
-      - lilypond-emmentaler-fonts
-      - lilypond-fonts-common
+      packages:
+        - cabextract # for extracting MS fonts from source
+        - xorg-x11-font-utils # dependency of msttcore-fonts-installer-2.6-1.noarch
+        - google-noto-emoji-fonts
+        - ibm-plex-fonts-all
+        - aajohan-comfortaa-fonts
+        - amiri-fonts-all
+        - cjkuni-ukai-fonts
+        - adobe-source-code-pro-fonts
+        - adobe-source-code-vf-fonts
+        - adobe-source-sans-pro-fonts
+        - leland-fonts-all
+        - lilypond-emmentaler-fonts
+        - lilypond-fonts-common
 
   - type: script
     scripts:
