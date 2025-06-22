@@ -1,8 +1,8 @@
 type: dnf
 repos:
   copr:
-    - https://copr.fedorainfracloud.org/coprs/swayfx/swayfx/repo/fedora-%OS_VERSION%/swayfx-swayfx-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
+    - swayfx/swayfx
+    - erikreider/SwayNotificationCenter
 remove:
   packages:
     - sway

@@ -1,8 +1,8 @@
 type: dnf
 repos:
   copr:
-    - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-    - https://copr.fedorainfracloud.org/coprs/heus-sueh/packages/repo/fedora-%OS_VERSION%/heus-sueh-fedora-%OS_VERSION%.repo
+    - solopasha/hyprland
+    - heus-sueh/packages
 install:
   packages:
     - hyprland
