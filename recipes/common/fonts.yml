@@ -17,8 +17,10 @@ modules:
   - type: dnf
     install:
       packages:
+        - curl
         - cabextract # for extracting MS fonts from source
         - xorg-x11-font-utils # dependency of msttcore-fonts-installer-2.6-1.noarch
+        - fontconfig
         - google-noto-emoji-fonts
         - ibm-plex-fonts-all
         - aajohan-comfortaa-fonts
